@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JokeApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="category_list_fragment_label">Joke Categories</string>
+    <string name="jokes_list_fragment_label">Search jokes</string>
+    <string name="favorites" translatable="false">Favorites</string>
+    <string name="dislike">Dislike</string>
+    <string name="like">Like</string>
+    <string name="blacklist_label">Blacklist</string>
+    <string name="nsfw_block">nsfw</string>
+    <string name="religious_block">religious</string>
+    <string name="political_block">political</string>
+    <string name="racist_block">racist</string>
+    <string name="sexist_block">sexist</string>
+    <string name="explicit_block">explicit</string>
+    <string name="joke_type_label">Joke type:</string>
+    <string name="single_joke_type">single</string>
+    <string name="twopart_joke_type">twopart</string>
+    <string name="number_of_jokes_label">Number of jokes:</string>
+    <string name="get_jokes_txt">Get Jokes</string>
+    <string name="joke_title">%1$s: Joke %2$d</string>
+    <string name="deleted_from_favorites_msg">Deleted from favorites</string>
+    <string name="saved_to_favorites_msg">Saved to favorites</string>
+    <string name="already_in_favorites_msg">Already in favorites</string>
+    <string name="db_save_fail_msg">Not saved: %1$s</string>
+    <string name="retrofit_error_msg">Error: %1$s</string>
+    <string name="jokes_number_info">Got %1$d jokes</string>
+
+</resources>

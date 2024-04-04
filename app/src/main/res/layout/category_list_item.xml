@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/joke_category_circle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle_shape" />
+
+    <TextView
+        android:id="@+id/joke_category_abbr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/noto_sans_bold_italic"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="4sp"
+        android:textAlignment="center"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/joke_category_circle"
+        app:layout_constraintEnd_toEndOf="@+id/joke_category_circle"
+        app:layout_constraintStart_toStartOf="@+id/joke_category_circle"
+        app:layout_constraintTop_toTopOf="@+id/joke_category_circle"
+        tools:text="Pr"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/fav_category_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:importantForAccessibility="no"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/joke_category_circle"
+        app:layout_constraintEnd_toEndOf="@+id/joke_category_circle"
+        app:layout_constraintStart_toStartOf="@+id/joke_category_circle"
+        app:layout_constraintTop_toTopOf="@+id/joke_category_circle"
+        app:srcCompat="@drawable/ic_database"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/joke_category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/noto_sans"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="4sp"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/joke_category_circle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Programming"
+        tools:ignore="RtlCompat" />
+    <View
+        android:id="@+id/joke_category_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/primaryColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/joke_category_circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
