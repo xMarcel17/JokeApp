@@ -12,7 +12,8 @@ import com.example.jokeapp.databinding.FragmentJokeListBinding
 class JokeListFragment : Fragment() {
 
     private lateinit var binding: FragmentJokeListBinding
-    // ignore the error with the JokeListFragmentArgs if it is shown
+    // ignore the error with the JokeListFragmentArgs if it is shown -
+    // try to invalidate the cache and restart the IDE
     private val args: JokeListFragmentArgs by navArgs()
 
     override fun onCreateView(
